@@ -1,33 +1,43 @@
 <template>
   <div class="login_container">
-      <div class="login_box">
-        <!-- 头像区域 -->
-        <div class="avatar_box">
-          <img src="../assets/logo.png" alt="">
-        </div>
-        <!-- 登录表单区域 -->
-        <el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" label-width="0px" class="login_form">
-          <!-- name -->
-          <el-form-item prop="username">
-            <el-input v-model="loginForm.username" prefix-icon="iconfont icon-user"></el-input>
-          </el-form-item>
-          <!-- password -->
-          <el-form-item prop="password">
-            <el-input v-model="loginForm.password" prefix-icon="iconfont icon-3702mima" type="password"></el-input>
-          </el-form-item>
-          <!-- button区域 -->
-          <el-form-item class="btns">
-            <el-button type="primary" @click="login">登录</el-button>
-            <el-button type="info" @click="resetLoginForm">重置</el-button>
-          </el-form-item>
-        </el-form>
+    <div class="login_box">
+      <!-- 头像区域 -->
+      <div class="avatar_box">
+        <img src="../assets/logo.png" alt="" />
       </div>
+      <!-- 登录表单区域 -->
+      <el-form
+        ref="loginFormRef"
+        :model="loginForm"
+        :rules="loginFormRules"
+        label-width="0px"
+        class="login_form"
+      >
+        <!-- name -->
+        <el-form-item prop="username">
+          <el-input v-model="loginForm.username" prefix-icon="iconfont icon-user"></el-input>
+        </el-form-item>
+        <!-- password -->
+        <el-form-item prop="password">
+          <el-input
+            v-model="loginForm.password"
+            prefix-icon="iconfont icon-3702mima"
+            type="password"
+          ></el-input>
+        </el-form-item>
+        <!-- button区域 -->
+        <el-form-item class="btns">
+          <el-button type="primary" @click="login">登录</el-button>
+          <el-button type="info" @click="resetLoginForm">重置</el-button>
+        </el-form-item>
+      </el-form>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       // form数据绑定
       loginForm: {
@@ -49,15 +59,15 @@ export default {
   },
   methods: {
     // reset form 功能
-    resetLoginForm () {
-      // $refs 在标签中被绑定
+    resetLoginForm() {
       this.$refs.loginFormRef.resetFields()
     },
     // login 功能
-    login () {
+    login() {
       this.$refs.loginFormRef.validate(async valid => {
-        if (!valid) return ''
+        if (!valid) return
         const { data: res } = await this.$http.post('login', this.loginForm)
+        // console.log(res)
         if (res.meta.status !== 200) return this.$message.error('登陆失败')
         this.$message.success('登陆成功')
         // 将登陆成功后的 token 保存到客户端 sessionStorage 中
@@ -70,9 +80,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
 .login_container {
   background-color: #2b4b6b;
+  background-image: url(../assets/bg.png);
   height: 100%;
 }
 
