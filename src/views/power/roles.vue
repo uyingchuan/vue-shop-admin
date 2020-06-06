@@ -174,6 +174,7 @@ export default {
         return this.$message.error(res.meta.msg)
       }
       this.roles = res.data
+      this.$message.success('获取角色列表成功')
     },
     // 关闭 diglog 事件（初始化 diglog）
     diglogClose(operation) {
