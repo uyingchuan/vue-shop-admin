@@ -7,7 +7,7 @@
       <el-breadcrumb-item>用户列表</el-breadcrumb-item>
     </el-breadcrumb>
 
-    <!-- 卡片试图区域 -->
+    <!-- 卡片视图区域 -->
     <el-card class="box-card">
       <!-- 搜索与添加区域 -->
       <el-row :gutter="20">
@@ -90,7 +90,7 @@
           </el-form-item>
         </el-form>
         <!-- 底部区域 -->
-        <span slot="footer" class="dialog-footer">
+        <span slot='footer' class="dialog-footer">
           <el-button @click="addDiglogVisible = false">取 消</el-button>
           <el-button type="primary" @click="addUser">确 定</el-button>
         </span>
@@ -116,7 +116,7 @@
           </el-form-item>
         </el-form>
         <!-- 底部区域 -->
-        <span slot="footer" class="dialog-footer">
+        <span slot='footer' class="dialog-footer">
           <el-button @click="editDiglogVisible = false">取 消</el-button>
           <el-button type="primary" @click="editUserInfo">确 定</el-button>
         </span>

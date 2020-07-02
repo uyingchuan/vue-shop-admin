@@ -7,6 +7,7 @@ import Users from '../views/users/users'
 import Roles from '../views/power/roles'
 import Rights from '../views/power/rights'
 import Reports from '../views/report/reports'
+import Orders from '../views/order/orders'
 
 Vue.use(VueRouter)
 
@@ -22,7 +23,8 @@ const routes = [
       { path: '/users', component: Users },
       { path: '/roles', component: Roles },
       { path: '/rights', component: Rights },
-      { path: '/reports', component: Reports }
+      { path: '/reports', component: Reports },
+      { path: '/orders', component: Orders }
     ]
   }
 ]
