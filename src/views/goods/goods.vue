@@ -126,7 +126,7 @@ export default {
       this.getGoodsList()
     },
     goAddpage() {
-      this.$router.push('/goodsAdd')
+      this.$router.push('/goods/add')
     }
   }
 }

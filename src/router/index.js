@@ -50,7 +50,7 @@ const routes = [
       { path: '/params', component: Params },
       { path: '/categories', component: Categories },
       { path: '/goods', component: Goods },
-      { path: '/goodsAdd', component: GoodsAdd }
+      { path: '/goods/add', component: GoodsAdd }
     ]
   }
 ]
