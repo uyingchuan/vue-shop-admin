@@ -6,6 +6,15 @@ import './plugins/element.js'
 import './assets/fonts/iconfont.css'
 // 全局样式表
 import './assets/css/global.css'
+// 富文本编辑器
+import VueQuillEditor from 'vue-quill-editor'
+// require styles
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+
+// 表格树
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 // 配置请求的根路径
@@ -20,6 +29,9 @@ axios.interceptors.request.use(config => {
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
+
+Vue.use(VueQuillEditor)
+Vue.component('tree-table', TreeTable)
 
 // 过滤器, 处理日期数据
 Vue.filter('dateFormat', function(originVal) {

@@ -12,7 +12,31 @@ body,
     font-size: 12px;
 }
 
+.el-card {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
 .el-table {
     margin-top: 15px;
     font-size: 12px;
+}
+
+.el-cascader-menu {
+  height: 300px;
+}
+
+.el-steps {
+  margin: 15px 0px;
+}
+
+.el-step__title {
+  font-size: 12px;
+}
+
+.quill-editor {
+  height: 260px;
+}
+
+.pagination {
+  margin-top: 15px;
 }
