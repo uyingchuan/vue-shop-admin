@@ -9,7 +9,7 @@
     <el-card class="box-card">
       <el-button type="primary" @click="addDiglogVisible = true">添加角色</el-button>
 
-      <el-table :data="roles" border stripe>
+      <el-table row-key="id" :data="roles" border stripe>
         <el-table-column type="expand">
           <template v-slot="scope">
             <el-row
