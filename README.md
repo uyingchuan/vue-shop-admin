@@ -48,7 +48,7 @@
 
 ![welcome](https://gitee.com/uyc/vue-shop-admin/raw/master/image/categories.png)
 
-### 项目源自 黑马程序员 见[视频](https://www.bilibili.com/video/BV1E7411c7M8?)
+### 项目学自 黑马程序员 见[视频](https://www.bilibili.com/video/BV1E7411c7M8)
 
 #### 个人 QQ 1516814651
 #### 欢迎大家来交个朋友啊
