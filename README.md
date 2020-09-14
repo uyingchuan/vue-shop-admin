@@ -49,3 +49,8 @@
 ![welcome](https://gitee.com/uyc/vue-shop-admin/raw/master/images/categories.png)
 
 
+### 安装与使用
+```bash
+npm install
+npm run serve
+```
