@@ -26,25 +26,25 @@
 ### 项目预览
 ![welcome](./images/login.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/welcome.png)
+![welcome](./images/welcome.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/users.png)
+![welcome](./images/users.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/roles.png)
+![welcome](./images/roles.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/rights.png)
+![welcome](./images/rights.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/orders.png)
+![welcome](./images/orders.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/reports.png)
+![welcome](./images/reports.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/goods.png)
+![welcome](./images/goods.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/goodsAdd.png)
+![welcome](./images/goodsAdd.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/params.png)
+![welcome](./images/params.png)
 
-![welcome](https://github.com/uyingchuan/vue-shop-admin/blob/master/image/quillEditor.png)
+![welcome](./images/quillEditor.png)
 
 ### 安装与使用
 ```bash
